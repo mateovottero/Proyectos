@@ -1,0 +1,274 @@
+
+      /*index*/
+
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0%;
+    font-family: 'segoe ui';
+    min-height: 100%;
+  }
+
+  html{
+    min-height: 100%;
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: rgb(230, 211, 109);
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: rgb(230, 211, 109);
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid rgb(230, 211, 109);
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  
+.encabezado{
+    background-color: #030303;
+    padding-bottom: 2%;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'PT Sans', sans-serif;
+    
+}
+h1{
+    font-family: 'PT Sans', sans-serif;
+    color:rgb(230, 211, 109);
+    display: inline-block;
+} 
+
+ .tituloparallax{
+    position: relative;
+    text-align: center;
+    color:rgb(230, 211, 109);
+ }
+
+.parallax {
+    background-image: url(/img/Quieres-comprar-carro-Conoce-la-alternativa-a-la-financiacion\ \(1\).webp);
+    height: 700px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+.destacadas{
+    display: grid;
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.imgdestacadasindex{
+    width: 100% ;
+    height: 70% ;
+    margin: 3% 3% 3% 3%;
+  }
+
+.imgauto{
+    width: 30% ;
+    height: 24% ;
+    margin: 1% 1% 1% 1%;
+}
+
+ .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:50px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+
+
+.footer_index{
+    background-color: black;
+    color: #FFF;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.section-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+.footeruno, .footerdos, .footertres, .footercuatro{
+    text-align: center;
+}
+
+.formulario{
+    display: inline-block;
+    width: 30%;
+}
+.formulario ul{
+    margin: 1%;
+    padding: 1%;
+
+}
+.imgforumalario{
+    display: inline-block;
+}
+.footercuatro a{
+  color: #FFF;
+  text-decoration: none;
+}
+.footercuatro ul{
+  list-style-type: none;
+}
+.redes li{
+  list-style-type: none;
+  color: #FFF;
+}
+.griditem1{
+  grid-area: griditem1;
+}
+.griditem2{
+  grid-area: griditem2;
+}
+.griditem3{
+  grid-area: griditem3;
+}
+.grid{
+  display: grid;
+  grid-column-gap: 5%;
+  grid-row-gap: 3%;
+  margin: 3% 3% 3% 3%;
+  text-align: center;
+  grid-template-areas:
+  "griditem1 griditem2 griditem3";
+  }
+@media (max-width:600px){
+  .grid{
+   grid-template-areas:
+   "griditem1"
+   "griditem2"
+   "griditem3"
+   "griditem4"
+   "griditem5"
+   "griditem6"
+   "griditem7"
+   "griditem8"
+   "griditem9"
+  }
+
+}
+
+.titulodestacadasindex{
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.precio{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(230, 211, 109);
+}
+.negrita{
+  font-size: larger;
+  font-weight: 600;
+}
+.sectionfinanciacion{
+  text-align: center;
+  margin: 5%;
+  display: grid;
+}
+.sectionfinanciacion hr{
+  height: 5px;
+  opacity: inherit;
+}
