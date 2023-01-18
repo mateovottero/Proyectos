@@ -131,7 +131,7 @@ h1{
  }
 
 .parallax {
-    background-image: url(/img/parallaximagen.webp);
+    background-image: url(../img/parallaximagen.webp);
     height: 700px;
   
     background-attachment: fixed;
