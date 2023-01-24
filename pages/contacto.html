@@ -19,18 +19,18 @@
             <div class="nav">
                 <input type="checkbox" id="nav-check">
                 <div class="nav-header">
-                    <div class="nav-title">
+                  <div class="nav-title">
                     Automotores Mendoza
-                    </div>
+                  </div>
                 </div>
                 <div class="nav-btn">
-                    <label for="nav-check">
+                  <label for="nav-check">
                     <span></span>
                     <span></span>
                     <span></span>
-                    </label>
+                  </label>
                 </div>
-                    
+                
                 <div class="nav-links">
                     <a href="../index.html">inicio</a>
                     <a href="./stock.html">stock</a>
@@ -41,30 +41,50 @@
             </div>
         </nav>
     </header>
-    <article>
-        <h2>Nuestra Historia</h2>
-        <p> Automotores Mendoza es una agencia de automoviles de todo tipo pero sobretodo de autos usados previamente seleccionados por nosotros, los buscamos de la misma forma en la que buscariamos un auto para nosotros por que sabemos que eso es lo que la gente quiere.
-        Somos solamente 4 personas trabajando, esta es una empresa familiar, entre ellos esta:</p>
-    
-        <ol class="lista-de-integrantes">
-            <li>Eduardo(Padre) que es el fundador y padre de la familia</li>
-            <li>Abril(hija) que es nuestra gestora </li>
-            <li>Mateo(hijo) que es nuestro vendedor</li>
-            <li>Caro(hija) que cumple funciones varias</li> 
-        </ol>
-        <h2>¡Mas de 500 ventas cerradas!</h2>
-        <div>
-            <a href="https://api.whatsapp.com/send?phone=3512075797&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-                <i class="fa fa-whatsapp my-float"></i>
-                </a>
-        </div>
-    </article>
+    <form class="formulario">
+        <ul><label for="">Nombre*</label></ul>    
+        <ul><input type="text"></ul>
+        <ul><label for="">DNI*</label></ul> 
+        <ul><input type="text"></ul>
+        <ul><label for="">Apellido*</label></ul>
+        <ul><input type="text"></ul>
+        <ul><label for="">Edad*</label></ul>
+        <ul><input type="text"></ul>
+        <ul><p>Elija su medio de contacto:</p></ul>
+        <ul><label for="celular">celular</label>
+            <input type="radio" name="contacto" id="celular"></ul>
+        <ul><label for="fijo">fijo</label>
+            <input type="radio" name="contacto" id="fijo"></ul>
+        <ul><label for="mail">mail</label>
+            <input type="radio" name="contacto" id="mail"></ul>
+        <ul><input type="text"> </ul>
+        <ul><input type="submit" value="Enviar"></ul>
+        <ul><input type="reset"  value="Limpiar"></ul>
+    </form>
+    <div>
+        <h2>
+            Podes contactarnos via:
+        </h2>
+        <ul class="redes">
+        <li><a href="https://www.instagram.com/mateovottero_/?__coig_restricted=1" target="_blank" rel="noopener noreferrer">instagram</a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">twitter</a></li>
+        <li><a href="https://www.facebook.com/mateo.la.gloria" target="_blank" rel="noopener noreferrer">facebook</a></li>
+        </ul>
+    </div>
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=3512075797&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+            </a>
+    </div>
+
+
+
     <footer id="footer_index" class="footer_index"> 
         <section class="section-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="footeruno col-lg-3">   
-                            <h3>Direccion</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="footeruno col-lg-3">   
+                        <h3>Direccion</h3>
                         <p> Av. Colón 3950, Córdoba</p>
                     </div>
                     <div class="footerdos col-lg-3">
@@ -79,14 +99,14 @@
                     </div>
                     <div class="footercuatro col-lg-3">
                         <h3>Seguinos</h3>
-                        <p>Instagram</p>
-                        <p>twitter</p>
+                        <p>Intagram</p>
+                        <p>Twitter</p>
                         <p>linkeding</p>
                     </div>
                 </div>
             </div>
         </section>
-    
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
